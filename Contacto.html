@@ -4,52 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SLGear</title>
-    <style>
-        body {
-            background-color: gray;
-            margin: 0; 
-        }
-
-        .barra {
-            background-color: rgb(213, 206, 206);
-            padding: -5px 20px;
-            display: flex;
-            align-items: center;
-            
-            
-           
-           
-            
-        }
-
-        .barra a {
-            color: black;
-            text-decoration: none;
-            margin-right: 20px; 
-            font: size 23px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .icono {
-            margin-right: auto; 
-        }
-
-        
-
-        a:hover, a:active {
-            color: white;
-            background-color: gray;
-            padding: 24px;
-        }
-    </style>
+    <link rel="stylesheet" href="Estilo.css">
+    
 </head>
-<body>
+
+<body class="body-especifica">
+   
+
     <div class="barra">
         <img src="ilustraciones/logo.jpg" alt="Logo" class="icono" width="75" height="75">
-        <a href="https://www.w3schools.com">Inicio</a>
-        <a href="https://www.w3schools.com/Producto">Contacto</a>
-        <a href="https://www.w3schools.com/Contacto">Producto</a>
+        <a href="https://ramonalcaraz1987.github.io/index.html">Inicio</a>
+        <a href="https://ramonalcaraz1987.github.io/Contacto.html">Contacto</a>
+        <a href="https://ramonalcaraz1987.github.io/Productos.html">Producto</a>
     </div>
-    <div></div>
+    <div class="form">
+        <div class="columna1"></h2>  
+            
+            <div class="result">
+            <h3>REGISTRATE PARA PODER <br>
+                OBTENER NUESTROS PRODUCTOS!!</h3>
+                <ul id="ltamensajes"></ul>
+                <ul id ="ltaerrores"></ul>
+                
+            </div>
+                
+                <div class ="carta">
+                    <div class="cardcarrusel">
+                        <img src="ilustraciones/incio.png" id="card">
+                    </div>
+                </div>
+          
+        </div>
+        
+        <div class="columna2">
+            <form  onsubmit="return validacion()">
+                
+                <label for="fname">Nombres</label> <br> 
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Apellidos</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="tel">Telefono</label><br>
+                <input type="text" id="tel" name="tel" value=""><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" value=""><br>
+                <label for="base">Posición:</label><br>
+                <div class="radio-group">
+                    <input type="radio" id="Base" name="Posicion" value="0">
+                    <label for="Base">Base</label>
+                    <input type="radio" id="Escolta" name="Posicion" value="1">
+                    <label for="Escolta">Escolta</label>
+                    <input type="radio" id="Alero" name="Posicion" value="2">
+                    <label for="Alero">Alero</label>
+                    <input type="radio" id="Ala-Pivot" name="Posicion" value="3">
+                    <label for="Ala-Pivot">Ala-Pivot</label>
+                    <input type="radio" id="Pivot" name="Posicion" value="4">
+                    <label for="Pivot">Pivot</label>
+                </div>
+                <input type="submit" value="Enviar">
+                
+            </form>
+        </div>
+    </div>
+    <script src="Contacto.js"></script>
 </body>
 </html>
